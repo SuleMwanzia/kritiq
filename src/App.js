@@ -1,21 +1,14 @@
 
 import './App.css';
-
-const Person = (props) => {
-  return(
-    <> 
-<h1>Name: {props.name}</h1>
-<h2>Last Name: {props.lastName}</h2>
-<h3>Age: {props.age}</h3>
-</>
-  )
-} 
+import { useState } from 'react'; 
 
 const App =() => {
-  
+ const [counter, setCounter] = useState(0); 
   return (
     <div className="App">
-      <Person name= {'Ricky'} lastName={'Gervais'} age={30}/>
+      <button>-</button>
+      <h1>0</h1>
+      <button>+</button>
     </div>
   );
 }
