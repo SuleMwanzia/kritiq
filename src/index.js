@@ -1,6 +1,11 @@
 import React from "react";
-import { root } from "react";
-
+import ReactDOM  from "react-dom/client";
 import App from "./App";
+import reportWebVitals from "./ReportWebVitals"
 
-root.render(<App />, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <App/>
+);
+
+reportWebVitals();
